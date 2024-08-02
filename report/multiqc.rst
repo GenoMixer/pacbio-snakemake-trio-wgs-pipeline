@@ -1,0 +1,1 @@
+MultiQC report aggregating FastQC, alignment and variant calling stats.
