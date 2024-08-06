@@ -34,6 +34,26 @@ rule sort:
         samtools sort -@ {threads} {params.extra} -o {output.bam}##idx##{output.bai} {input}  2> {log}
         """
 
+rule mosdepth:
+    input:
+        bam=protected("results/{sample}/{sample}.bam"),
+        bai=protected("results/{sample}/{sample}.bam.bai")
+    output:
+        depth="results/{sample}/{sample}_mosdepth_summary.txt"
+        
+    log:
+        "logs/mosdepth/{sample}_depth.log"
+    params:
+        prefix="results/{sample}/{sample}"
+    threads: 4
+    conda: "envs/mosdepth.yaml"
+    shell:
+        """
+        mosdepth --threads {threads} {params.prefix} {input.bam} >{log} 2>&1
+        
+        """
+
+
 rule md5:
     input:
         bam="results/{sample}/{sample}.bam",
