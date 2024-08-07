@@ -7,6 +7,7 @@ rule all:
         expand("results/{sample}/{sample}.bam", sample=samples.index),
         expand("results/{sample}/{sample}.bam.bai", sample=samples.index),
         expand("results/{sample}/{sample}.bam.md5", sample=samples.index),
+        expand("results/{sample}/{sample}_mosdepth_summary.txt", sample=samples.index),
         expand("results/{sample}/{sample}.vcf.gz", sample=samples.index),
         expand("results/{sample}/{sample}.g.vcf.gz", sample=samples.index),
         expand("results/{sample}/{sample}.visual_report.html", sample=samples.index)
