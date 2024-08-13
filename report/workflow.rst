@@ -1,0 +1,1 @@
+PacBio long read sequencing (LRS) based workflow for whole genome trio analysis.
