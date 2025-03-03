@@ -2,3 +2,6 @@ sample	family	father	mother	sex	is_affected	fastq	hpo
 55606	D15-0505	0	0	F	1		
 55609	D15-0505	0	0	M	1		
 55603	D15-0505	52509	55606	F	2		
+HG002  FAM-01  HG002 HG003
+HG003  FAM-01  0  0
+HG004  FAM-01  0  0
