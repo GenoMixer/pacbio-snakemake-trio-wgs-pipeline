@@ -1,4 +1,4 @@
 sample	family	father	mother	sex	is_affected	fastq	hpo
-HG002  FAM-01  HG003 HG004  1  1
-HG003  FAM-01  0  0  1  0
-HG004  FAM-01  0  0  1  0
+HG002  FAM-01  HG003 HG004  1  2
+HG003  FAM-01  0  0  1  1
+HG004  FAM-01  0  0  2  1
